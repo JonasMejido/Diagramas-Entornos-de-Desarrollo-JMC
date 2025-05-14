@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/118.0.0.0" version="27.0.5">
+  <diagram name="Página-1" id="Ec2IpsSH2-6nYZrDoq90">
+    <mxGraphModel dx="1240" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Empresa" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry width="150" height="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="EmpleadoFijo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="329" width="150" height="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="EmpleadoComision" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="529" width="157" height="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="EmpleadoFijoBonificacion" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="736" width="201" height="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Gerente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" parent="1" vertex="1">
+          <mxGeometry x="987" width="150" height="1096" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Crear empleado con nombre y cargo" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="248" y="109" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" value="Calcular salario total" style="curved=1;endArrow=block;" parent="1" source="3" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="163" />
+              <mxPoint x="455" y="193" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="Salario total = salario fijo" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" parent="1" source="3" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="251" y="247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="Crear empleado con nombre y cargo" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="2" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="301" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Calcular salario total" style="curved=1;endArrow=block;" parent="1" source="4" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="659" y="355" />
+              <mxPoint x="659" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Considerar ventas" style="curved=1;endArrow=block;" parent="1" source="4" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="659" y="439" />
+              <mxPoint x="659" y="469" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Salario total = salario + (comision * ventas)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" parent="1" source="4" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="523" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Crear empleado con nombre y cargo" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="2" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="464" y="577" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Calcular salario total" style="curved=1;endArrow=block;" parent="1" source="5" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="888" y="631" />
+              <mxPoint x="888" y="661" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Salario total = salario fijo + bonificacion" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" parent="1" source="5" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="467" y="715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Crear gerente con nombre y cargo" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="2" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="577" y="769" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Calcular salario total" style="curved=1;endArrow=block;" parent="1" source="6" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1113" y="823" />
+              <mxPoint x="1113" y="853" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Considerar logros" style="curved=1;endArrow=block;" parent="1" source="6" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1113" y="907" />
+              <mxPoint x="1113" y="937" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="Salario total = salario fijo + bonificacion por logros" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" parent="1" source="6" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="991" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
